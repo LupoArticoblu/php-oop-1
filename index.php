@@ -24,3 +24,9 @@ var_dump($film0->get_movie_details());
 var_dump($film1->get_movie_details());
 
 ?>
+
+<ul>
+  <?php foreach($film1->generi as $genere): ?>
+    <li><?php echo $genere->name ?></li>
+  <?php endforeach; ?>  
+</ul>
